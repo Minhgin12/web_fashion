@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+*{margin: 0px; padding: 0px}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: "Lato", sans-serif; font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.bg-blue{background :#2b2ede;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@Media (min-width: 1300px)
+{
+  .container, .container-lg, .container-md, .container-sm, .container-x1{
+    max-width: 1200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb{
+  background: #ccc !important;
+}
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+
+
+
+.container{
+  max-width: 85%;
+  
+}
+.headerWrapper .top-strip {
+  padding: 8px 0px;
+}
+.headerWrapper .bg-blue  p{
+  color: #fff; 
+  font-size: 12px; 
+  font-weight: 500;
+}
+
+.headerWrapper{
+  background-color: #f8fad2;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.headerWrapper .header{
+  width: 100%;
+  height: auto;
+  padding :15px 0px;
+}
+
+.logoWrapper img{
+  width: 100%;
+  height: 80px;
+  
+}
+
+.headerWrapper .header .part2 .countryDrop{
+  width:150px;
+  height: 60px;
+  min-width: 150px;
+  text-align: left;
+  justify-content: flex-start !important;
+  color: #000 !important;
+  border: 1px solid rgba(0,0,0,0.2)  !important;
+  border-radius: 7px !important;
+  padding : 10px 20px !important;
+  right:10px;
+  background-color: #d3fbf9;
+  
+}
+.headerWrapper .header .part2 .countryDrop .lable{
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0,0,0,0.4) !important;
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  color: #233a95 !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop span.m1-auto svg{
+  opacity: 0.7;
+}
+
+.headerSearch{
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding:10px;
+  position: relative;
+  border-radius: 10px ;
+  border: 1px solid rgba(0,0,0,0.1) !important; 
+}
+.headerSearch input{
+  background: transparent !important;
+  outline: none !important;
+  font-size:14px ;
+  color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 40px;
+  border: 0px !important;
+  padding: 0 20px !important;
+  
+}
+.headerSearch input ::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.6);
+}
+
+.headerSearch button{
+  position: absolute;
+  right: 15px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+}
+
+.headerSearch button svg{
+  font-size: 30px;
+  opacity: 0.8s;
+}
+
+.header .part3 .circle{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 45px !important;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.header .part3 .circle svg{
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.cartTab .price{
+  font-size: 18px;
+  color: rgba(0,0,0,0.9) ;
+  font-weight: 700;
+}
+.cartTab button{
+  background: #fff1ee !important;
+
+}
+.cartTab button svg {
+  color: #ea2b0f !important;
+}
+.cartTab .count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #ea2b0f ;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+nav .allCatTab{
+  background: #2bbef9;
+  padding: 8px 20px !important;
+  border-radius: 30px !important;
+  :hover{
+    background: #8faec2;
   }
 }
+nav .allCatTab *{
+  color: #fff;
+
+}
+nav .allCatTab .text{
+  font-weight: 600;
+}
+
+nav .allCatTab .icon1 svg{
+  font-size: 20px !important;
+}
+nav .allCatTab .icon2 svg{
+  font-size: 15px !important;
+}
+
+nav .navPart1 {max-width: 20%; flex: 0 0 20%;}
+nav .navPart2 {max-width: 80%; flex: 0 0 80%;}
+nav .navPart2 ul{
+  margin-bottom: 0px;
+}
+nav .navPart2 ul li a{
+  text-decoration: none;
+}
+
+nav .navPart2 ul li button{
+  font-size: 14px !important;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px;
+}
+nav .navPart2 ul li a svg{
+  font-size: 20px;
+}
+nav .navPart2 ul li a button:hover{
+    background: #f0f1f6;
+    color: #09aced;
+}
+nav .navPart2 ul li{
+  position: relative;
+}
+nav .navPart2 ul li .submenu{
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  min-width: 200px;
+  background: #f8fafd;
+}
+
+.locationModel .MuiPaper-elevation{
+  padding: 25px;
+  position: relative;
+}
+.locationModel .countryList{
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.locationModel .countryList li{
+  width: 100%;
+  list-style: none;
+}
+.locationModel .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start !important;
+  padding: 10px 15px !important;
+}
+.locationModel .countryList li button:hover{
+  background: #f1f1f1;
+}
+.locationModel .countryList li button.active{
+  background: #e2e2e2 !important;
+}
+
+.locationModel .close_{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000 !important;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% o !important;
+}
+.locationModel .close_ svg{
+  font-size: 22px;
+}
+
