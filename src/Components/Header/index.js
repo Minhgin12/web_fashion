@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import logo from "../../assets/images/logo.png"
+import logo1 from "../../assets/images/logo1.png"
 import { Link } from 'react-router-dom'
 // import Button from '@mui/material/Button';
 // import { FaAngleLeft } from "react-icons/fa6";
@@ -11,6 +11,7 @@ import { BsHandbagFill } from "react-icons/bs";
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
 import { MyContext } from '../../App';
+import HomeBanner from '../HomeBanner';
 
 
 const Header = () => {
@@ -22,14 +23,14 @@ const Header = () => {
                 <div className="container">
                     <p className='mb-0 mt-0 text-center'> 
                         Have eliminated the imposible
-                    </p>
+                    </p> 
                 </div>
             </div>
             <div className='header'>
                 <div className='container'>
                     <div className='row'>
                         <div className='logoWrapper d-flex align-items-center col-sm-2'>
-                            <Link to={'/'}><img src={logo} alt='logo' /></Link> 
+                            <Link to={'/'}><img src={logo1} alt='logo' style={{paddingLeft: '35px'}}/></Link> 
                         </div>
                         <div className='col-sm-10 d-flex align-items-center part2'>
 
@@ -56,6 +57,7 @@ const Header = () => {
             <Navigation/>
             
         </div>
+        
     </>
   )
 }
