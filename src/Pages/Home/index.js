@@ -39,13 +39,13 @@ const Home = () => {
                   <img src={anvat1} className="cursor w-100"/>
                 </div>
               </div>
-            </div>  
+            </div> 
             
             <div className='col-md-9 productRow'>
               <div className='d-flex align-items-center'>
                 <div className='info w-75'>
-                  <h3 className='mb-0 hd'>BEST SELLERS</h3>
-                  <p className='text-light text-sml mb-0'>Do not miss the current offers util the end of March.</p>
+                  <h3 className='mb-0 hd'>sản phẩm bán chạy nhất</h3>
+                  <p className='text-light text-sml mb-0'>Đừng bỏ lỡ các ưu đãi hiện tại cho đến hết tháng 12.</p>
                 </div>
 
                 <Button className='viewAllBtn ml-auto'>View all <TfiAngleDoubleRight/></Button>
@@ -80,8 +80,8 @@ const Home = () => {
 
               <div className='d-flex align-items-center mt-5'>
                 <div className='info w-75'>
-                  <h3 className='mb-0 hd'>NEW PRODUCTS</h3>
-                  <p className='text-light text-sml mb-0'>New product with updated stocks.</p>
+                  <h3 className='mb-0 hd'>Sản phẩm mới</h3>
+                  <p className='text-light text-sml mb-0'>Sản phẩm mới đã được cập nhật trong kho của BHM.</p>
                 </div>
 
                 <Button className='viewAllBtn ml-auto'> View all <TfiAngleDoubleRight/></Button>
@@ -116,14 +116,14 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
-                <p className='text-white mb-1'>$20 discount for the first order</p>
-                <h4 className='text-white'>Join our newsletter ..</h4>
-                <p className='text-light'>Join our email subcription......</p>
+                <p className='text-white mb-1'>Giảm 299k cho đơn đặt hàng đầu tiên của bạn</p>
+                <h4 className='text-white'>Hãy tham gia với chúng tôi ...</h4>
+                <p className='text-light'>Hãy tham gia đăng ký email của chúng tôi ngay bây giờ để nhận thông tin cập nhật về các chương trình khuyến mãi và phiếu giảm giá.</p>
 
                 <form>
                   <IoMailOutline />
-                  <input type='text' placeholder='Your email address'/>
-                  <Button>SUBCRIBE</Button>
+                  <input type='text' placeholder='Email của bạn'/>
+                  <Button>Đăng kí</Button>
                 </form>
 
 

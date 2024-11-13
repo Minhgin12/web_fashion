@@ -20,7 +20,7 @@ const Navigation = () => {
                             setIsOpenSidebarVal(!isOpenSidebarVal)
                         }>
                             <span className='icon1 mr-2'><IoMdMenu/></span>
-                            <span className='text'>ALL CATEGORIES</span>
+                            <span className='text'>DANH MỤC</span>
                             <span className='icon2 ml-2'><FaAngleDown/></span>
                         </Button>
                         <div className={`sidebarNav ${isOpenSidebarVal=== true ? 'open' : ''} `}>

@@ -21,8 +21,8 @@ const Header = () => {
         <div className="headerWrapper" >
             <div className="top-strip bg-blue">
                 <div className="container">
-                    <p className='mb-0 mt-0 text-center'> 
-                        Have eliminated the imposible
+                    <p className='mb-0 mt-0 text-center' style={{ color:''}}> 
+                        Freeship đơn từ 45k, giảm nhiều hơn cùng <i style={{ color:'rgb(255,183,0)'}}>FREESHIP</i>  XTRA
                     </p> 
                 </div>
             </div>
@@ -41,13 +41,20 @@ const Header = () => {
                             
                             <SearchBox/>
                             <div className='part3 d-flex align-items-center ml-auto'>
-                                <Button className='circle mr-3'><FaRegUserCircle/></Button>
+                                {
+                                    context.isLogin!== true ? <Link to="/signIn"><Button className='account mr-3'><FaRegUserCircle/> &nbsp; Đăng nhập</Button></Link> : <Button className='account mr-3'><FaRegUserCircle/> &nbsp; Tài khoản </Button>
+                                
+                                }
+                                
+
                                 <div className='m1-auto cartTab d-flex align-items-center'>
-                                    <span className='price'>3.0$</span>
+                                    
                                     <div className='position-relative ml-2'>
                                         <Button className='circle'><BsHandbagFill/></Button>
                                         <span className='count d-flex align-items-center justify-content-center'>1</span>
+                                        
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>

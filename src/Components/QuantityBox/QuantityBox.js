@@ -20,10 +20,8 @@ const QuantityBox = () => {
   return (
     <div className='quantityDrop d-flex align-items-center'>
         <Button onClick={minus}><FaMinus/></Button>
-            <input type="text" value={inputVal}/>
-
+        <input type="text" value={inputVal}/>
         <Button onClick={plus}><MdAdd/></Button>
-
     </div>
   )
 }

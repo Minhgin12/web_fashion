@@ -12,7 +12,7 @@ const HomeCat = () => {
         <section className='homeCat'>
             <div className='container' /*style={{ overflow: 'hidden'}}*/>
                 
-                <h3 className='mb-4 hd'>Featured cartegories</h3>
+                <h3 className='mb-4 hd'>Danh mục nổi bật</h3>
                 
                 <Swiper
                     slidesPerView={10}

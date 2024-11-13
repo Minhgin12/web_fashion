@@ -42,15 +42,15 @@ const CountryDropdown = () => {
     <>
         <Button className='countryDrop' onClick={ () => setisOpenModal(true)}>
             <div className='info d-flex flex-column'>
-                <span className='lable'>Your Location</span>
-                <span className='name'>{ context.selectedCountry !=="" ? (context.selectedCountry.length >10 ? context.selectedCountry?.substr(0,10)+'...' : context.selectedCountry) : 'Select location'}</span>
+                <span className='lable'>Vị trí</span>
+                <span className='name'>{ context.selectedCountry !=="" ? (context.selectedCountry.length >10 ? context.selectedCountry?.substr(0,10)+'...' : context.selectedCountry) : 'Chọn địa điểm'}</span>
             </div>  
             <span className='ml-auto'><FaAngleDown/></span>                 
         </Button>
 
         <Dialog  open={isOpenModal} onClose={() => setisOpenModal(false)} className='locationModel' TransitionComponent={Transition}>
-          <h4 className='mb-0'>Choose your delivery location</h4>
-          <p>Enter your address and we will specify the offer for your area</p>
+          <h4 className='mb-0'>Chọn địa điểm giao hàng</h4>
+          <p>Nhập địa chỉ của bạn để hiển thị các đề xuất thích hợp </p>
           <Button className='close_' onClick={ () => setisOpenModal(false)}><IoCloseCircleOutline/></Button>
 
           <div className='headerSearch w-100'>

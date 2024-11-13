@@ -68,12 +68,7 @@ const Footer = () => {
                 <div className='col'>
                     <h5>Phương thức thanh toán</h5>
                     <ul>
-                        <li><Link to='#'>Fresh Vegetable</Link></li>
-                        <li><Link to='#'>Herbs $ Seasonings</Link></li>
-                        <li><Link to='#'>Cuts & sprouts</Link></li>
-                        <li><Link to='#'>Exotic Fruits & Veggies</Link></li>
-                        <li><Link to='#'>packaged Produce</Link></li>
-                        <li><Link to='#'>Party trays</Link></li>
+                        
                     </ul>
                 </div>
                 <div className='col'>
